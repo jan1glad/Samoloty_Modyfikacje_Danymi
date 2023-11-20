@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssJG/style_JG.css">
+    <script src="skryptyJG/skrypty_JG.js"></script>
+    <title>Samoloty JG</title>
+</head>
+<body onload="start()">
+    <h1>Samoloty Gładykowskiego</h1>
+ <section id="baseSection">
+    Wybór sekcji <br>
+    <button onclick="showHide(1)">Dodaj pojazd</button>
+    <button onclick="showHide(2)">Zobacz pojazdy</button>
+   <!-- <button onclick="showHide(3)">Usuń pojazd</button>-->
+    <button onclick="showHide(3)">Parametry pojazdów</button>
+
+ </section>
+ <section id="newPlane">
+    Nowy samolot <br>
+    Dodaj samolot: <select id="selectPlane"></select>
+    <button onclick="addPlane()">Dodaj samolot</button>
+ </section>
+ <section id="seePlane">
+    Zobacz samoloty <br>
+    <table id="tableOfPlanes">
+        <tr>
+            <th>Nazwa</th>
+            <th>Zastosowanie</th>
+            <th>Ilość pasażerów</th>
+            <th>Max. Prędkość</th>
+            <th>Cena</th>
+        </tr>
+    </table>
+ </section>
+ <section id="paramsOfPlane">
+    Parametry samolotów <br>
+    <table id="tableNameOfPlanes">
+        <tr>
+            <th>Samolot</th>
+            <th>Boeing</th>
+            <th>Airbus</th>
+            <th>Cessna</th>
+            <th>Szybowiec</th>
+            <th>F16</th>
+        </tr>
+        <tr>
+        <td id="paramSamolot"></td>
+        <td id="paramBoeing"></td>
+        <td id="paramAirbus"></td>
+        <td id="paramCessna"></td>
+        <td id="paramSzybowiec"></td>
+        <td id="paramF16"></td>
+    </tr>
+    </table>
+ </section>
+ <footer>&copy;Gładykowski 2023</footer>
+</body>
+</html>
